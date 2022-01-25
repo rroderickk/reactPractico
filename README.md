@@ -1,5 +1,4 @@
 # React Practico con Oscar Barajas Taveras
-
 ### Class Notes video3
 package.json
 ```
@@ -28,5 +27,11 @@ $ npm install babel-loader html-loader html-webpack-plugin
 
 ```
 ### Class Notes video5
+Cambios en tiempo real con Webpack
+
+```
+webpack.config.js
+  mode: 'development',
+```
 
 
