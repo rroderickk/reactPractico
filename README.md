@@ -40,8 +40,7 @@ $ npm install mini-css-extract-plugin css-loader style-loader sass sass-loader -
 
 ### Transformando HTML y CSS en componentes video7
 Componentes
-Transformando HTML y CSS en componentes de React
 
-```
-
+### Estilos en los componentes de React video8
+styles scss
 

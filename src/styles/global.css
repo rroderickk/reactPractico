@@ -1,0 +1,9 @@
+/* $base-color: #ff1324;
+$color: rgba(black, 0.88); */
+
+
+
+body {
+  background-color: var(--lg);
+  color: var(--sm);
+}
