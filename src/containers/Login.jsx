@@ -1,23 +1,33 @@
 import React from 'react';
 import '../styles/login.scss'
+import logoyard from '../../public/logos/logo_yard_sale.svg'
 
-const login = () => {
-return (
-<div className="login">
-  <div classNameName="form-container">
-    <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo"/>
-    <h1 className="title">Create a new password</h1>
-    <p className="subtitle">Enter a new passwrd for yue account</p>
-    <form action="/" className="form">
-      <label for="password" className="label">Password</label>
-      <input type="password" id="password" placeholder="*********" className="input input-password" />
-      <label for="new-password" className="label">Password</label>
-      <input type="password" id="new-password" placeholder="*********" className="input input-password" />
-      <input type="submit" value="Confirm" className="primary-button login-button" />
-    </form>
-  </div>
-</div>
-);
+try {	
+  const separarCon = (separador, ...strings)=> strings.reduce( (res,str)=> {
+    if (res !== '') { res += separador; };
+    return res + str;
+  });  
+  console.log({ 
+    0: separarCon(" ", "hola", "mundo", "como", "estaís", "estaís",),
+    1: separarCon(" ", "que", "tal", "va", "todo", "y yo que me alegro",),
+  }); } catch(e) {	console.warn( e.stack, '\n[*] '+e.name, '\n[*] '+e.message); 
 };
 
-export default login;
+const login = () => { return (
+
+<div className="login">
+  <div className="form-container">
+    <img src={logoyard} alt="logo" className="logo" />
+    <form action="/" className="form" />
+      <label for="email" className="label">Email address</label>
+      <input type="text" id="email" placeholder="email@email.com" className="input input-email"/>
+      <label for="password" className="label">Password</label>
+      <input type="password" id="password" placeholder="enter password here" className="input input-password"/>
+      <input type="submit" value="Log in" className="primary-button login-button"/>
+      <a href="/forgotpassword">Forgot my password</a>
+    <form/>
+    <button className="secondary-button signup-button">Sign up</button>
+  </div>
+</div>
+
+); }; export default login;

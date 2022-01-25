@@ -24,6 +24,13 @@ module.exports = {
         },
       },
       {
+        test: /\.(png|jpg|svg|jpeg|web)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: "public/img/[hash][ext]",
+        },
+      },
+      {
         test: /\.html$/,
         use: [
           {
@@ -55,7 +62,7 @@ module.exports = {
       directory: path.join(__dirname, 'public'),
     },
     compress: true,
-    port: 3006
+    port: 64340 
   },
 };
 

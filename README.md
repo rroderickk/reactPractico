@@ -37,10 +37,16 @@ webpack.config.js
 ```
 $ npm install mini-css-extract-plugin css-loader style-loader sass sass-loader -D
 ```
-
 ### Transformando HTML y CSS en componentes video7
 Componentes
 
 ### Estilos en los componentes de React video8
 styles scss
 
+### Estilos en los componentes de React video9
+React Router DOM
+```
+<!-- deprecated: $ npm install rect-router-dom -->
+$ npm install react-router-dom@6
+```
+[ReactRouterOvereview](https://reactrouter.com/docs/en/v6/getting-started/overview#configuring-routes)
