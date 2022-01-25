@@ -33,10 +33,15 @@ Cambios en tiempo real con Webpack
 webpack.config.js
   mode: 'development',
 ```
-### React con CSS y Sass
+### React con CSS y Sass video6
 ```
 $ npm install mini-css-extract-plugin css-loader style-loader sass sass-loader -D
 ```
 
+### Transformando HTML y CSS en componentes video7
+Componentes
+Transformando HTML y CSS en componentes de React
+
+```
 
 
