@@ -1,6 +1,9 @@
 import React from 'react';
-import '../styles/login.scss'
+import '../styles/login.scss';                               /*@styles*/ //! (@) => @styles
 import logoyard from '../../public/logos/logo_yard_sale.svg'
+import ForgotPassword from './ForgotPassword';
+import { Link,Route,Routes } from 'react-router-dom';
+import NotFound from '../pages/NotFound';
 
 try {	
   const separarCon = (separador, ...strings)=> strings.reduce( (res,str)=> {
@@ -14,7 +17,6 @@ try {
 };
 
 const login = () => { return (
-
 <div className="login">
   <div className="form-container">
     <img src={logoyard} alt="logo" className="logo" />
@@ -24,10 +26,14 @@ const login = () => { return (
       <label for="password" className="label">Password</label>
       <input type="password" id="password" placeholder="enter password here" className="input input-password"/>
       <input type="submit" value="Log in" className="primary-button login-button"/>
-      <a href="/forgotpassword">Forgot my password</a>
+      <Link to="/forgotpassword" element={<ForgotPassword />} >Forgot my password?</Link>
+      {/* <p href="">Forgot my password</p> */}
+
+        <Link to="/notfound" element={<NotFound />} >notFound?</Link>
+        <Routes>
+        </Routes>
     <form/>
     <button className="secondary-button signup-button">Sign up</button>
   </div>
 </div>
-
 ); }; export default login;

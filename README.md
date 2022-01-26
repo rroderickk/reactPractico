@@ -50,3 +50,5 @@ React Router DOM
 $ npm install react-router-dom@6
 ```
 [ReactRouterOvereview](https://reactrouter.com/docs/en/v6/getting-started/overview#configuring-routes)
+
+### Navegación entre rutas video10

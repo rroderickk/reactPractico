@@ -3,30 +3,38 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ForgotPassword from '../containers/ForgotPassword';
 import Layout from '../containers/Layout';
 import Login from '../containers/Login';
-import '../styles/global.css';
+import NotFound from '../pages/NotFound';
+import Home from '../pages/Home';
+import '../styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) => @styles
 
-const App = () => {
-  // function App() {
-    return (
-  <BrowserRouter>
-      <Layout>
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/" element={<Login />} />
-          <Route path="/forgotpassword" element={<ForgotPassword />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
-        </Routes>
-      </Layout>
-  </BrowserRouter>
-  );
-}; export default App;
-
-
+const App = () =>  {
+return (
+<BrowserRouter>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Layout>
+</BrowserRouter>
+); }; export default App;
 
 
 
 
+
+
+
+
+
+
+
+
+/* Render modalidad  */
 // import { render } from "react-dom";
+// const App = () => {
 // // render(
 //   <BrowserRouter>
 //     <Routes>
@@ -35,4 +43,4 @@ const App = () => {
 //     </Routes>
 //   </BrowserRouter>
   // document.getElementById("app")
-// 
+// }; export default App;
