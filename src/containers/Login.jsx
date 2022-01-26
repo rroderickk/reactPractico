@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/login.scss';                               /*@styles*/ //! (@) => @styles
-import logoyard from '../../public/logos/logo_yard_sale.svg'
+import logoyard from '../../public/logos/logo_yard_sale.svg';
 import ForgotPassword from './ForgotPassword';
 import { Link,Route,Routes } from 'react-router-dom';
 import NotFound from '../pages/NotFound';
@@ -28,10 +28,9 @@ const login = () => { return (
       <input type="submit" value="Log in" className="primary-button login-button"/>
       <Link to="/forgotpassword" element={<ForgotPassword />} >Forgot my password?</Link>
       {/* <p href="">Forgot my password</p> */}
-
-        <Link to="/notfound" element={<NotFound />} >notFound?</Link>
-        <Routes>
-        </Routes>
+      <Link to="/notfound" element={<NotFound />} >notFound?</Link>
+      <Routes>
+      </Routes>
     <form/>
     <button className="secondary-button signup-button">Sign up</button>
   </div>

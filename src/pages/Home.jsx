@@ -1,8 +1,7 @@
 import React from 'react';
+import Header from '../components/Header';
+
 const Home = () => {
-  return (
-    <div>
-      <h1>ReactShop</h1>
-    </div>
-  );
-}; export default Home;
+return (
+  <Header />
+); }; export default Home;

@@ -25,10 +25,10 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|svg|jpeg|web)$/,
+        test: /\.(png|jpg|svg|jpeg|web|svg)$/,
         type: 'asset/resource',
         generator: {
-          filename: "public/img/[hash][ext]",
+          filename: "public/[hash][ext]",
         },
       },
       {

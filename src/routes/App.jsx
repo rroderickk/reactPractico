@@ -12,7 +12,7 @@ return (
 <BrowserRouter>
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="*" element={<NotFound />} />
