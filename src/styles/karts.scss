@@ -6,8 +6,8 @@ body {
 	font-family: "Quicksand", sans-serif;
 }
 .cards-container {
-	z-index: 9; //!
-	margin-top: 144px;
+	z-index: -9; //!
+	margin-top: 22px;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 240px);
 	gap: 26px;

@@ -62,7 +62,8 @@ comienza el reto:
 - home: check
 - step-1 nav: check
 - step-2 sendEmail: check
-- step-3 karts: karts () => 
+- step-3 karts: check
 ```
+![screenshot](/screenshot.jpg)
 
 ### ¿Qué es Atomic Design? video12

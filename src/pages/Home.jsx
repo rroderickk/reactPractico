@@ -4,8 +4,8 @@ import Karts from "../components/Karts";
 
 const Home = () => {
 return ( 
-  <Header />,
-  <Karts />
+  <React.Fragment>
+    {<Header />}
+    {<Karts/>}
+  </React.Fragment>
 ); }; export default Home;
-
-

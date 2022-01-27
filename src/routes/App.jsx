@@ -15,6 +15,7 @@ return (
     <Layout>
       <Routes>
         <Route exact path="/"         element={<Home/>} />
+        <Route exact path="/karts"         element={<Karts/>} />
         <Route exact path="/login"          element={<Login />} />
         <Route exact path="/forgotpassword" element={<ForgotPassword />} />
         <Route exact path="/sendemail"      element={<SendEmail />} />
