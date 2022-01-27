@@ -56,7 +56,12 @@ $ npm install react-router-dom@6
 Header en todas las rutas
 ```
 comienza el reto:
-- step-1
+- login: check
+- forgotPassword: check
+- nontFound: check
+- home: check
+- step-1 nav: check
+- step-2 sendEmail: check
 ```
 
 ### ¿Qué es Atomic Design? video12

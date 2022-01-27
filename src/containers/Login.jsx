@@ -4,6 +4,7 @@ import logoyard from '../../public/logos/logo_yard_sale.svg';
 import ForgotPassword from './ForgotPassword';
 import { Link,Route,Routes } from 'react-router-dom';
 import NotFound from '../pages/NotFound';
+import SendEmail from '../pages/SendEmail';
 
 try {	
   const separarCon = (separador, ...strings)=> strings.reduce( (res,str)=> {
@@ -26,9 +27,10 @@ const login = () => { return (
       <label for="password" className="label">Password</label>
       <input type="password" id="password" placeholder="enter password here" className="input input-password"/>
       <input type="submit" value="Log in" className="primary-button login-button"/>
-      <Link to="/forgotpassword" element={<ForgotPassword />} >Forgot my password?</Link>
+      <Link to="/forgotpassword" element={<ForgotPassword />} >Forgot my password?:Check</Link>
       {/* <p href="">Forgot my password</p> */}
-      <Link to="/notfound" element={<NotFound />} >notFound?</Link>
+      <Link to="/sendemail" element={<SendEmail />} >sendEmail?</Link>
+      <Link to="/notfound" element={<NotFound />} >notFound?:Check</Link>
       <Routes>
       </Routes>
     <form/>
