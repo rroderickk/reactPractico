@@ -7,3 +7,9 @@ node_modules/
 
 #.vscode
 .vscode/
+
+#.theme
+theme/
+
+#$
+public/moneyIn/

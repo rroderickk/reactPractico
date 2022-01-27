@@ -1,5 +1,11 @@
 @use "../styles/vars";
 
+// .form-container {	 		 //! Les recomiendo esta forma para hacer contenedores responsive, el truco esta en el max-width y el width|
+// 	display: grid;				 //! ╔╦╗┬─┐┬┌─┐┬┌─
+// 	justify-items: center; //!  ║ ├┬┘││  ├┴┐
+// 	max-width: 400px; 		 //!  ╩ ┴└─┴└─┘┴ ┴
+// 	width: 90%;
+// }
 body {
 	margin: 0;
 	font-family: "Quicksand", sans-serif;
@@ -76,5 +82,11 @@ body {
 @media (max-width: 640px) {
 	.logo {
 		display: block;
+	}
+	.secondary-button {
+		position: absolute;
+		width: inherit;
+		bottom: 0;
+		margin-bottom: 24px;
 	}
 }
