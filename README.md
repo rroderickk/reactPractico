@@ -58,7 +58,7 @@ Header en todas las rutas
 comienza el reto:
 - login: check
 - forgotPassword: check
-- nontFound: check
+- notFound: check
 - home: check
 - step-1 nav: check
 - step-2 sendEmail: check
