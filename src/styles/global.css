@@ -1,4 +1,4 @@
 body {
-  background-color: var(--lg);
-  color: var(--sm);
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
 }
