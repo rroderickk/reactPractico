@@ -7,7 +7,7 @@ return (
   
 <div className="login">
   <div className="form-container">
-    <img src={logoyard} alt="logo" className="logo"/>
+    <img src={logoyard} alt="logo-forgot" className="logo-forgot"/>
     <h1 className="title">Forgot password?</h1>
     <p className="subtitle">Enter a new password for you account</p>
     <form action="/" className="form">

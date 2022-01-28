@@ -63,7 +63,16 @@ comienza el reto:
 - step-1 nav: check
 - step-2 sendEmail: check
 - step-3 karts: check
+- step-4 fix all bugs
 ```
 ![screenshot](/screenshot.jpg)
 
-### ¿Qué es Atomic Design? video12
+<img src="./iPhone6_7_8_Plus.png" alt="drawing" style="width: 200px; float: left;" alt="iphone"/> 
+
+###  ¿Qué es Atomic Design? video12
+Siguiendo la modalidad de atomicDesing
+```
+continuando el reto:
+- step-4 Home, Login,ForgotPassword, SendEmail, NotFound, ProductList,ProductDetail,Sumary,My Account,
+```
+

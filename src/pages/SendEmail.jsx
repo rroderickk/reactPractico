@@ -7,7 +7,7 @@ const SendEmail = () => {
 return (
 <div className="login">
   <div className="form-container">
-    <img src={logoyards} alt="logo" className="logo" />
+    <img src={logoyards} alt="logo" className="logo-send" />
     <h1 className="title">Email has been sent!</h1>
     <p className="subtitle">Please check your inbox for instructions on how to reset the password</p>
     <div className="email-image"> <img src={emailimage} alt="email" /> </div>

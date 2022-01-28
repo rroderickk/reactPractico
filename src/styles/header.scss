@@ -11,12 +11,14 @@ nav {
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
 }
-.menu {
+.icon-menu {
 	display: none;
 }
-.logo {
-	width: 100px;
+.header-logo {
+	width: 90px;
+	display: flex;
 }
+
 .navbar-left ul,
 .navbar-right ul {
 	list-style: none;
@@ -68,7 +70,7 @@ nav {
 	align-items: center;
 }
 @media (max-width: 640px) {
-	.menu {
+	.icon-menu {
 		display: block;
 	}
 	.navbar-left ul {

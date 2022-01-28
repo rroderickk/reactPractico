@@ -1,11 +1,13 @@
 import React  from "react";
 import Header from "../components/Header";
 import Karts from "../components/Karts";
+import ProductList from '../containers/ProductList.jsx';
 
 const Home = () => {
 return ( 
-  <React.Fragment>
-    {<Header />}
-    {<Karts/>}
-  </React.Fragment>
+<React.Fragment>
+  {<Header />}
+  {<ProductList/>}
+  {<Karts/>}
+</React.Fragment>
 ); }; export default Home;

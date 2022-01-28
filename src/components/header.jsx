@@ -6,9 +6,9 @@ import shopping from '../../public/icons/icon_shopping_cart.svg';
 const Header = () => {
 return (
 <nav>
-<img src={iconmenu} alt="menu" className="menu" />
+<img src={iconmenu} alt="menu" className="icon-menu" />
 <div className="navbar-left">
-  <img src={menu} alt="logo" className="logo" />
+  <img src={menu} alt="header-logo" className="header-logo" />
     <ul>
       <li> <a href="/karts">All         </a> </li>  <li> <a href="/">Clothes    </a> </li> 
       <li> <a href="/">Electronics </a> </li>  <li> <a href="/">Furnitures </a> </li>
