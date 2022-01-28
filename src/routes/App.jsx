@@ -12,16 +12,16 @@ import '../styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) 
 const App = () =>  {
 return (
 <BrowserRouter>
-    <Layout>
-      <Routes>
-        <Route exact path="/"         element={<Home/>} />
-        <Route exact path="/karts"         element={<Karts/>} />
-        <Route exact path="/login"          element={<Login />} />
-        <Route exact path="/forgotpassword" element={<ForgotPassword />} />
-        <Route exact path="/sendemail"      element={<SendEmail />} />
-        <Route path="*"               element={<NotFound />} />
-      </Routes>
-    </Layout>
+<Layout>
+	<Routes>
+		<Route exact path="/"				element={<Home/>} />
+		<Route exact path="/karts"				element={<Karts/>} />
+		<Route exact path="/login"				element={<Login />} />
+		<Route exact path="/forgotpassword" element={<ForgotPassword />} />
+		<Route exact path="/sendemail"		element={<SendEmail />} />
+		<Route path="*"						element={<NotFound />} />
+	</Routes>
+</Layout>
 </BrowserRouter>
 ); }; export default App;
 

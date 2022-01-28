@@ -62,8 +62,12 @@ comienza el reto:
 - home: check
 - step-1 nav: check
 - step-2 sendEmail: check
-- step-3 karts: check
+- step-3 karts: check$
 ```
 ![screenshot](/screenshot.jpg)
+<img src="./iPhone6_7_8_Plus.png" alt="drawing" style="width: 200px; float: left;" alt="iphone"/> 
 
-### ¿Qué es Atomic Design? video12
+###  ¿Qué es Atomic Design? video12
+
+
+

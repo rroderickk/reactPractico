@@ -5,11 +5,14 @@ node_modules/
 # babelrc
 .babelrc
 
-#.vscode
+# vscode
 .vscode/
 
-#.theme
+# theme
 theme/
 
-#$
+# $
 public/moneyIn/
+
+# card-themes
+src/components/cardsThemes.js
