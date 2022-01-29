@@ -1,22 +1,14 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ForgotPassword from '../pages/ForgotPassword';
-import Layout from '../containers/Layout';
-import Login from '../pages/Login';
-import Karts from '../components/Karts';
-import NotFound from '../pages/NotFound';
-import Home from '../pages/Home';
-import SendEmail from '../pages/SendEmail';
-import Sumary from '../pages/Sumary.jsx';
-import MyAccount from '../pages/MyAccount';
-import Checkout from '../pages/CheckOut';
-import Orders from '../pages/Orders';
-import CreateAccount from '../pages/CreateAccount';
+import React from 'react'; import { BrowserRouter, Routes, Route } from 'react-router-dom'; import Layout from '../containers/Layout';
+import ForgotPassword from '../pages/ForgotPassword'; import Login from '../pages/Login'; import NotFound from '../pages/NotFound';
+import Home from '../pages/Home'; import SendEmail from '../pages/SendEmail'; import Sumary from '../pages/Sumary.jsx';
+import MyAccount from '../pages/MyAccount'; import Checkout from '../pages/CheckOut'; import Orders from '../pages/Orders';
+import CreateAccount from '../pages/CreateAccount'; import Karts from '../components/Karts';
+
 import ShoppingCartItem from '../components/ShoppingCardItem';
 import ProductInfo from '../components/ProductInfo';
+import MyOrders from '../containers/MyOrders';
 
-// import ProductDetail from '../containers/ProductDetail';
-
+import ProductDetail from '../containers/ProductDetail';
 import '../styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) => @styles
 
 const App = () =>  {	return (
@@ -34,9 +26,13 @@ const App = () =>  {	return (
 		<Route exact path="/checkout" 				element={<Checkout />} />
 		<Route exact path="/createaccount" 		element={<CreateAccount />}	/>
 		<Route path="*"						element={<NotFound />} />
-{/*@ComponentsRoutes revisar */}
+//todo┌─┐┌─┐┌┬┐┌─┐┌─┐┌┐┌┌─┐┌┐┌┌┬┐┌─┐
+//todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐@ComponentsRoutes revisar
+//todo└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘
 		<Route exact path="/shoppingcarditem" element={<ShoppingCartItem />}	/>
 		<Route exact path="/productinfo" 	element={<ProductInfo />}	/>
+		<Route exact path="/productdetail" 	element={<ProductDetail />}	/>
+		<Route exact path="/myorders" 	element={<MyOrders />}	/>
 
 	</Routes>
 </Layout>

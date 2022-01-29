@@ -11,6 +11,8 @@ import Orders from '../pages/Orders';
 import CreateAccount from '../pages/CreateAccount';
 import ShoppingCardItem from '../components/ShoppingCardItem';
 import ProductInfo from '../components/ProductInfo';
+import ProductDetail from '../containers/ProductDetail';
+import MyOrders from '../containers/MyOrders';
 
 import '../styles/global.css';             /*@styles*/ //! (@) => @styles
 var styles = { margin: 44+'px', 'lineHeight': 32+'px', };
@@ -29,11 +31,14 @@ const Sumary = () => {  return (
 	{<Link to="/orders" element={<Orders />}                  >Orders</Link>}{<br/>}
 	{<Link to="/createaccount" element={<CreateAccount />}    >CreateAccount</Link>}{<br/>}
 
-  {<h1 style={{color: 'red'}}>Components</h1>}
+{<h1 style={{color: 'red'}}>Components</h1>}
 	{<Link to="/shoppingcarditem" element={<ShoppingCardItem />}    >ShoppingCardItem</Link>}{<br/>}
 
 {/* Debbuggear el reponsive productinfo usar checkout*/}
 	{<Link to="/productinfo" element={<ProductInfo />}    >ProductInfo</Link>}{<br/>}
+	{<Link to="/productdetail" element={<ProductDetail />}    >ProductDetail</Link>}{<br/>}
+	{<Link to="/myorders" element={<MyOrders />}    >MyOrders</Link>}{<br/>}
+
 
 </div>}
 </React.Fragment>

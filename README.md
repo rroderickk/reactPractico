@@ -74,5 +74,6 @@ Siguiendo la modalidad de atomicDesing
 ```
 continuando el reto:
 - step-4 Home, Login,ForgotPassword, SendEmail, NotFound, ProductList,ProductDetail,Sumary,My Account,
-```
 - step-5 Sumary, Checkout..
+- step-6 jsx completed, todo: review responsive components..
+```
