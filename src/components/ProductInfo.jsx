@@ -1,18 +1,17 @@
 import React from 'react';
-import '../styles/ProductInfo.scss';
+import tesla2 from '../../public/moneyIn/tesla_roadster.jpg';
+import '../styles/ProductInfo.scss';                          /*@styles*/ //! (@) => @
 
-const ProductInfo = () => {
-return (
-<>
-  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
+const ProductInfo = () => { return (
+<div className="ProductInfo">
+  <img src={tesla2} alt="maquina" className='img-product-info'/>
   <div className="ProductInfo">
-    <p>$35,00</p>
-    <p>Bike</p>
+    <p>$35000</p> <p>tesla roadster</p>
     <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
     <button className="primary-button-info add-to-cart-button-info">
       <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />
       Add to cart
     </button>
   </div>
-</>
+</div>
 );  };  export default ProductInfo;

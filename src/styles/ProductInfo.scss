@@ -3,6 +3,13 @@
 .ProductInfo {
 	margin: 24px 24px 0 24px;
 }
+.img-product-info {
+	margin: 24px;
+	width: 100vh;
+	display: flex;
+	align-items: center;
+	margin: 48px;
+}
 .ProductInfo p:nth-child(1) {
 	font-weight: bold;
 	font-size: var(--md);
@@ -36,4 +43,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media (max-width: 640px) {
+	.img-product-info {
+		width: 250px;
+		border-radius: 4%;
+		display: flex;
+		align-items: center;
+		height: 100vp;
+	}
+	.add-to-cart-button-info {
+	}
 }
