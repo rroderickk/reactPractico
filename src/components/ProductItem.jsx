@@ -4,11 +4,11 @@ import tesla2 from '../../public/moneyIn/tesla_roadster.jpg';
 import addToCard from "../../public/icons/bt_add_to_cart.svg";
 
 const ProductItem = () => {
-  const [cartName, setCartName] = useState("bike");
-  const [priceItem, setPriceItem] = useState("bike");
+  const [cartName, setCartName] = useState([]);
+  const [priceItem, setPriceItem] = useState([]);
   const handleClick = () => {
-    setCartName("Tesla Roadster");
-    setPriceItem("$30'000");
+    setCartName([]);
+    setPriceItem([]);
   };
 return (
 <div className="ProductItem">

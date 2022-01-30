@@ -145,3 +145,12 @@ step-8
 ```
 
 ### Toggle del menú
+step-9
+```
+operador Ternario
+{toggle ? <Menu /> : ""}  //"" o null
+o
+{toggle &&  <Menu/>}
+
+```
+

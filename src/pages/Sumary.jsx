@@ -5,7 +5,7 @@ import NotFound from '../pages/NotFound'; import MyAccount from '../pages/MyAcco
 import Checkout from '../pages/CheckOut'; import Orders from '../pages/Orders';
 import CreateAccount from '../pages/CreateAccount';
 import ShoppingCardItem from '../components/ShoppingCartItem'; import ProductInfo from '../components/ProductInfo';
-import Menu from '../components/Menu';
+import Menu from '../components/Menu'; import Header from '../components/Header';
 import ProductItem from '../components/ProductItem';
 import ProductDetail from '../containers/ProductDetail'; import MyOrders from '../containers/MyOrders';
 import '../styles/global.css';             							/*@styles*/ //! (@) => @styles
@@ -14,7 +14,7 @@ var styles = { margin: 44+'px', 'lineHeight': 28+'px', };
 //?╠╦╝║ ║│ │ │ ├┤ ├┬┘╠╣ ├┬┘│ ││││ │ ║║║ ││
 //?╩╚═╚═╝└─┘ ┴ └─┘┴└─╚  ┴└─└─┘┘└┘ ┴ ╝╚╝─┴┘
 const Sumary = () => {  return (
-<React.Fragment>
+<React.Fragment>{<Header/>}
 {<div style={styles}>
   {<h1 style={{color: 'red'}}>EasyLinks</h1>}
   {<Link to="/" element={<Home/>}                          >Home</Link>}{<br/>}

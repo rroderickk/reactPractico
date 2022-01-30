@@ -20,11 +20,11 @@ const App = () =>  {	return (
 		<Route exact path="/forgotpassword" 	element={<ForgotPassword />} />
 		<Route exact path="/sendemail"				element={<SendEmail />} />
 		<Route exact path="/account" 					element={<MyAccount />}	/>
-		<Route exact path="/sumary" 					element={<Sumary />}	/>
 		<Route exact path="/orders" 					element={<Orders />}	/>
 		<Route exact path="/checkout" 				element={<Checkout />} />
 		<Route exact path="/createaccount" 		element={<CreateAccount />}	/>
-		<Route path="*"						element={<NotFound />} />
+		<Route path="*"												element={<NotFound />} />
+		<Route exact path="/sumary"		element={<Sumary />}	/>
 //todo┌─┐┌─┐┌┬┐┌─┐┌─┐┌┐┌┌─┐┌┐┌┌┬┐┌─┐
 //todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐@ComponentsRoutes revisarStylesResponsive
 //todo└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘
