@@ -3,11 +3,10 @@ import ForgotPassword from '../pages/ForgotPassword'; import Login from '../page
 import Home from '../pages/Home'; import SendEmail from '../pages/SendEmail'; import Sumary from '../pages/Sumary.jsx';
 import MyAccount from '../pages/MyAccount'; import Checkout from '../pages/CheckOut'; import Orders from '../pages/Orders';
 import CreateAccount from '../pages/CreateAccount'; import Karts from '../components/Karts';
-
-import ShoppingCartItem from '../components/ShoppingCardItem';
+import ShoppingCartItem from '../components/ShoppingCartItem'; import Menu from '../components/Menu';
 import ProductInfo from '../components/ProductInfo';
+import ProductItem from '../components/ProductItem';
 import MyOrders from '../containers/MyOrders';
-
 import ProductDetail from '../containers/ProductDetail';
 import '../styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) => @styles
 
@@ -27,13 +26,14 @@ const App = () =>  {	return (
 		<Route exact path="/createaccount" 		element={<CreateAccount />}	/>
 		<Route path="*"						element={<NotFound />} />
 //todo┌─┐┌─┐┌┬┐┌─┐┌─┐┌┐┌┌─┐┌┐┌┌┬┐┌─┐
-//todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐@ComponentsRoutes revisar
+//todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐@ComponentsRoutes revisarStylesResponsive
 //todo└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘
-		<Route exact path="/shoppingcarditem" element={<ShoppingCartItem />}	/>
-		<Route exact path="/productinfo" 	element={<ProductInfo />}	/>
+		<Route exact path="/shoppingcarditem" 	element={<ShoppingCartItem />}	/>
+		<Route exact path="/productinfo" 			element={<ProductInfo />}	/>
 		<Route exact path="/productdetail" 	element={<ProductDetail />}	/>
+		<Route exact path="/productitem" 	element={<ProductItem />}	/>
 		<Route exact path="/myorders" 	element={<MyOrders />}	/>
-
+		<Route exact path="/menu" 	element={<Menu />}	/>
 	</Routes>
 </Layout>
 </BrowserRouter>
