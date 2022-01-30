@@ -144,7 +144,7 @@ step-8
 
 ```
 
-### Toggle del menú
+### Toggle del menú video17
 step-8
 ```
 Operador Ternario
@@ -153,10 +153,37 @@ o
 {toggle &&  <Menu/>}
 
 ```
-### useEffect y consumo de APIs
+### useEffect y consumo de APIs video18
 step-9
-
 ```
+$npm install axios
+$npm install @babel/plugin-transform-runtime 
+
+en ProductList.jsx
+  const [products, setProducts] = useState([]);
+
+  useEffect( ()=>{
+    const response = await axios(api);
+    setProducts(response.data);
+    },[] 
+  );
 ```
+### Custom hook para la tienda video19
+step-9
+```
+import { useEffect, useState } from "react";
+import axios from 'axios';
 
+const useGetProducts = (API) => {
+	const [products, setProducts] = useState([]);
 
+	useEffect(async () => {
+		const response = await axios(API);
+		setProducts(response.data);
+	}, []);
+
+	return products;
+}; export default useGetProducts;
+```
+### useRef y formularios video20
+step-10

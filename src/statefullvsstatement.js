@@ -11,7 +11,7 @@ const statefull = () => {
   </div>    
 );  };  export default statefull;
 //!┌─┐┌┬┐┌─┐┌┬┐┌─┐less
-//!└─┐ │ ├─┤ │ ├┤ less No contineen estado solo devuelve un componente y se le pasa props
+//!└─┐ │ ├─┤ │ ├┤ less No continen estado solo devuelve un componente y se le pasa props
 //!└─┘ ┴ ┴ ┴ ┴ └─┘less
 const stateLessEjemplo1 = () => (
   <div>
@@ -19,7 +19,7 @@ const stateLessEjemplo1 = () => (
   </div>
 ); 
 
-const stateLessEjemplo2 = ({text}) => <ButtonRed text={text} />;
+const stateLessEjemplo2 = ({text}) => <ButtonRed text={text} />; // pasandole props
 
 //* Extendiendo clases de React.Component usando herencia y polimorfismo
 import React, { Component } from 'react';

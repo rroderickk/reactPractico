@@ -8,6 +8,7 @@ import ProductInfo from '../components/ProductInfo';
 import ProductItem from '../components/ProductItem';
 import MyOrders from '../containers/MyOrders';
 import ProductDetail from '../containers/ProductDetail';
+import ProductList from '../containers/ProductList';
 import '../styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) => @styles
 
 const App = () =>  {	return (
@@ -30,6 +31,7 @@ const App = () =>  {	return (
 //todo└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘
 		<Route exact path="/shoppingcarditem" 	element={<ShoppingCartItem />}	/>
 		<Route exact path="/productinfo" 			element={<ProductInfo />}	/>
+		<Route exact path="/productList" 			element={<ProductList />}	/>
 		<Route exact path="/productdetail" 	element={<ProductDetail />}	/>
 		<Route exact path="/productitem" 	element={<ProductItem />}	/>
 		<Route exact path="/myorders" 	element={<MyOrders />}	/>

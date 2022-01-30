@@ -8,6 +8,7 @@ import ShoppingCardItem from '../components/ShoppingCartItem'; import ProductInf
 import Menu from '../components/Menu'; import Header from '../components/Header';
 import ProductItem from '../components/ProductItem';
 import ProductDetail from '../containers/ProductDetail'; import MyOrders from '../containers/MyOrders';
+import ProductList from '../containers/ProductList'; 
 import '../styles/global.css';             							/*@styles*/ //! (@) => @styles
 var styles = { margin: 44+'px', 'lineHeight': 28+'px', };
 //?╦═╗╔═╗┬ ┬┌┬┐┌─┐┬─┐╔═╗┬─┐┌─┐┌┐┌┌┬┐╔╗╔┌┬┐
@@ -31,6 +32,7 @@ const Sumary = () => {  return (
 {/* //todo Debbuggear el reponsive productinfo usar checkout*/}
 	{<Link to="/productinfo" element={<ProductInfo/>}    		>ProductInfo</Link>}{<br/>}
 	{<Link to="/productitem" element={<ProductItem/>}    		>ProductItem</Link>}{<br/>}
+	{<Link to="/productList" element={<ProductList/>}    		>ProductList</Link>}{<br/>}
 	{<Link to="/productdetail" element={<ProductDetail/>}   >ProductDetail</Link>}{<br/>}
 	{<Link to="/myorders" element={<MyOrders/>}    					>MyOrders</Link>}{<br/>}
 	{<Link to="/menu" element={<Menu/>}    									>Menu</Link>}{<br/>}
