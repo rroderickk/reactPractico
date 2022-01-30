@@ -145,12 +145,18 @@ step-8
 ```
 
 ### Toggle del menú
-step-9
+step-8
 ```
-operador Ternario
+Operador Ternario
 {toggle ? <Menu /> : ""}  //"" o null
 o
 {toggle &&  <Menu/>}
 
 ```
+### useEffect y consumo de APIs
+step-9
+
+```
+```
+
 
