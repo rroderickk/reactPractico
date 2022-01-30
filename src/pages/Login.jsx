@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/login.scss';                               /*@styles*/ //! (@) => @styles
 import logoyard from '../../public/logos/logo_yard_sale.svg';
 import ForgotPassword from './ForgotPassword';
@@ -35,19 +35,42 @@ console.timeEnd('p2')
 
 } catch(e) {	console.warn(e.stack, '\n[*] '+e.name, '\n[*] '+e.message); };
 
-const login = () => { return (
-<div className="login">
-<div className="form-container">
-  <img src={logoyard} alt="logo" className="logo-login" />
-  <form action="/" className="form" />
-    <label htmlFor="email" className="label">Email address</label>
-    <input type="text" id="email" placeholder="email@email.com" className="input input-email"/>
-    <label htmlFor="password" className="label">Password</label>
-    <input type="password" id="password" placeholder="enter password here" className="input input-password"/>
-    <input type="submit" value="Log in" className="primary-button login-button"/>
-    <Link to="/forgotpassword" element={<ForgotPassword />}>Forgot my password?:Check</Link>
-  <form/>
-  <button className="secondary-button signup-button">Sign up</button>
-</div>
-</div>
-); }; export default login;
+
+const Login = () => { 
+
+  const form = useRef(null);
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		const formData = new FormData(form.current);
+		const data = {
+			usename: formData.get('email'),
+			password: formData.get('password')
+		}
+		console.log(data);
+	}
+
+  return (
+  <div className="login">
+  <div className="form-container">
+    <img src={logoyard} alt="logo" className="logo-login" />
+    <form action="/" className="form" ref={form}>
+      <label htmlFor="email" className="label">Email address</label>
+      <input type="text" name="email" placeholder="email@email.com" className="input input-email"/>
+      <label htmlFor="password" className="label">Password</label>
+      <input type="password" name="password" placeholder="enter password here" className="input input-password"/>
+      <Link to="/forgotpassword" element={<ForgotPassword />}>Forgot my password</Link>
+      <button 
+        onClick={handleSubmit}
+        className="primary-button login-button">
+        log in
+      </button>
+    </form>
+    <button 
+      className="secondary-button signup-button">
+      Sign up
+    </button>
+  </div>
+  </div>
+  ); 
+} 
+export default Login;

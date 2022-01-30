@@ -21,7 +21,7 @@ const ProductList =()=> {
   //   console.error(e.stack,'\n[*] '+e.name,'\n[*] '+e.message)
   // };
   
-  // const products = useGetProducts(API);  //! Si funciona
+  const products = useGetProducts(API);  //! Si funciona
   return (
   <section className="main-container-productlist">
     <div className="ProductList-productlist">
