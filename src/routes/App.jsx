@@ -11,9 +11,15 @@ import OrderItem from '@components/OrderItem';
 import MyOrders from '@containers/MyOrders';
 import ProductDetail from '@containers/ProductDetail';
 import ProductList from '@containers/ProductList';
+import AppContext from '@context/AppContext';
+import useInitialState from "@hooks/useInitialState";
 import '@styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) => @styles
 
-const App =()=>  {	return	(
+const App =()=>  {	
+	const initialState = useInitialState();
+
+return	(
+<AppContext.Provider value={initialState}>
 <BrowserRouter>
 <Layout>
 	<Routes>
@@ -42,4 +48,5 @@ const App =()=>  {	return	(
 	</Routes>
 </Layout>
 </BrowserRouter>
+</AppContext.Provider>
 );	};	export default App;

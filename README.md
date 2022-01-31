@@ -192,3 +192,12 @@ step-10
 ```
 login.jsx
 ```
+
+step-7 completed
+
+### React context video21
+
+step-11 completed
+
+### Completando el carrito de compras video22
+
