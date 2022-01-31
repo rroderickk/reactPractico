@@ -1,15 +1,14 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import AppContext from '@context/AppContext';
 import '@styles/ProductItem.scss';                      /*@styles*/ //! (@) => @styles
 import addToCardImage from "@icons/bt_add_to_cart.svg";
 
 const ProductItem = ( {product} ) => {
-  const { addToCard } = useContext(AppContext);
 
-  const handleClick =(item)=> {
-    addToCard(item);
+  const {addToCart} = useContext(AppContext);
+  const handleClick = (item) => {
+    addToCart(item);
   };
-
 
 return (
 <div className="ProductItem">

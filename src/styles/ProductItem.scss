@@ -7,7 +7,7 @@
 	cursor: pointer;
 	width: 240px;
 	height: 240px;
-	border-radius: 7px;
+	border-radius: 2px;
 	object-fit: cover;
 }
 
@@ -27,6 +27,7 @@
 .productItem-info img:hover {
 	width: 41px;
 	height: 41px;
+	border-radius: 9rem;
 	box-shadow: 0 0 .5rem #fff, inset 0 0 .5rem #fff, 0 0 2rem green;
 }
 .productItem-info div p:nth-child(1) {

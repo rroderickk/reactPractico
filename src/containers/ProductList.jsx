@@ -3,6 +3,7 @@ import useGetProducts from '@hooks/useGetProducts';
 import '@styles/ProductList.scss';                   /*@styles*/ //! (@) => @styles
 
 const ProductList =()=> { 
+
   const API = "https://api.escuelajs.co/api/v1/products";
   	const products = useGetProducts(API);                              //!$1 <=@ ENDPOINT
       return (
