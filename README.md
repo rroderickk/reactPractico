@@ -92,7 +92,7 @@ generator: {
   filename: "public/[hash][ext]",
 },
 ```
-con esto acortamos la codificacion y bastantes lineas de texto
+dentro de resolve dentro de webpack.js con esto acortamos la codificacion y bastantes lineas de texto
 ```
 Aquí dejo algunos alias 😄
 alias: {
@@ -113,6 +113,7 @@ import imagenName from '@icons/imageName.extension'
 ```
 - step-7 jsx , todo: cambiar el archivo webpack y agregarle las rutas de los decoradores..
 - step-7 jsx , todo: cambiar las rutas relativas y usar los decoradores anteriores..
+- step-7 completed
 
 ### React.useState video16
 cambinando lo anterior y esta clase deberia quedar así todos los jsx

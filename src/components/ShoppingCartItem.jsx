@@ -1,6 +1,5 @@
-import React from 'react';
-import '../styles/ShoppingCartItem.scss';
-import tesla2 from '../../public/moneyIn/tesla_roadster.jpg';
+import '@styles/ShoppingCartItem.scss';
+import tesla2 from '@moneyIn/tesla_roadster.jpg';
 
 const ShoppingCartItem = () => { return (
 <div className="ShoppingCartItem">

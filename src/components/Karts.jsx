@@ -1,9 +1,8 @@
-import React from 'react';
-import '../styles/karts.scss';                      /*@styles*/ //! (@) => @styles
-import tesla1 from '../../public/moneyIn/a6a5e1b74874278c0e1297c551bcfc.png';
-import bici from '../../public/moneyIn/pexels-photo-276517.jpeg';
-import tesla2 from '../../public/moneyIn/tesla_roadster.jpg';
-import btnadd from '../../public/icons/bt_add_to_cart.svg';
+import '@styles/karts.scss';                      /*@styles*/ //! (@) => @styles
+import tesla1 from '@moneyIn/a6a5e1b74874278c0e1297c551bcfc.png';
+import bici from '@moneyIn/pexels-photo-276517.jpeg';
+import tesla2 from '@moneyIn/tesla_roadster.jpg';
+import btnadd from '@icons/bt_add_to_cart.svg';
 
 const Karts   =  ()  =>  {  return   (
 <section className="main-container">

@@ -1,10 +1,8 @@
-import React from 'react';
-import logoaccount from '../../public/logos/logo_yard_sale.svg';
-import '../styles/MyAccount.scss'; /*@styles*/ //! (@) => @styles
+import logoaccount from '@logos/logo_yard_sale.svg';
+import '@styles/MyAccount.scss'; /*@styles*/ //! (@) => @styles
 
 const MyAccount = () => { return (
-  <>
-
+<>
 <div className="MyAccount">
   <div className="MyAccount-container">
     <img src={logoaccount} alt="logoAccount" className="logo-account" />
@@ -22,6 +20,5 @@ const MyAccount = () => { return (
     </form>
   </div>
 </div>
-
-  </>
+</>
 );  }; export default MyAccount;

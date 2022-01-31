@@ -1,12 +1,11 @@
-import React from 'react';
-import '../styles/ForgotPassword.scss'
-import logoyard from '../../public/logos/logo_yard_sale.svg'
+import '@styles/ForgotPassword.scss';
+// import logoyard from '@logos/logo_yard_sale.svg';
 
 const ForgotPassword = () => {
 return (
 <div className="login">
   <div className="form-container">
-    <img src={logoyard} alt="logo-forgot" className="logo-forgot"/>
+    {/* <img src={logoyard} alt="logo-forgot" className="logo-forgot"/> */}
     <h1 className="title">Forgot password?</h1>
     <p className="subtitle">Enter a new password for you account</p>
     <form action="/" className="form">

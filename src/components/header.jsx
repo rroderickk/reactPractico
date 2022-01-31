@@ -1,10 +1,10 @@
-import React , {useState } from 'react';
-import '../styles/header.scss';                             /*@styles*/ //! (@) => @styles
-import iconmenu from '../../public/icons/icon_menu.svg';
-import menuImg from '../../public/logos/logo_yard_sale.svg';
-import Menu from '../components/Menu';
+import {useState } from 'react';
+import '@styles/header.scss';                             /*@styles*/ //! (@) => @styles
+import iconmenu from '@icons/icon_menu.svg';
+import shopping from '@icons/icon_shopping_cart.svg';
+import menuImg from '@logos/logo_yard_sale.svg';
+import Menu from '@components/Menu';
 
-import shopping from '../../public/icons/icon_shopping_cart.svg';
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {

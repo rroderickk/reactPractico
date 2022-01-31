@@ -1,6 +1,5 @@
-import React from 'react';
-import OrderItem from '../components/OrderItem';
-import '../styles/MyOrder.scss';                  /*@styles*/ //! (@) => @styles
+import OrderItem from '@components/OrderItem';
+import '@styles/MyOrder.scss';                  /*@styles*/ //! (@) => @styles
 
 const MyOrder = () => { return (
 <aside className="MyOrder">

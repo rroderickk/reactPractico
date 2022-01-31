@@ -1,6 +1,5 @@
-import React from 'react';
-import logohouse from '../../public/logos/logo_yard_sale.svg';
-import '../styles/CreateAccount.scss';          /*@styles*/ //! (@) => @styles
+import logohouse from '@logos/logo_yard_sale.svg';
+import '@styles/CreateAccount.scss';          /*@styles*/ //! (@) => @styles
 
 const CreateAccount = () => { return (
 <div className="CreateAccount">
@@ -14,7 +13,7 @@ const CreateAccount = () => { return (
       <label htmlFor="email-account" className="label-account">Email: </label>
       <input type="text" id="email-account" placeholder="email@example.com" className="input-account input-email-account" />
       <label htmlFor="password" className="label-account">Password: </label>
-      <input type="password" id="password-account" placeholder="****insert*password*here****" className="input-account input-password-account" />
+      <input type="password" id="password-account" placeholder="insert password here" className="input-account input-password-account" />
     </div>
     <input type="submit" value="Create-account" className="primary-button-account login-button-account" />
   </form>

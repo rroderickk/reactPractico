@@ -1,8 +1,7 @@
-import React, { useRef } from 'react';
-import '../styles/login.scss';                               /*@styles*/ //! (@) => @styles
-import logoyard from '../../public/logos/logo_yard_sale.svg';
+import { useRef } from 'react'; import { Link } from 'react-router-dom';
+import '@styles/login.scss';                               /*@styles*/ //! (@) => @styles
+import logoyard from '@logos/logo_yard_sale.svg';
 import ForgotPassword from './ForgotPassword';
-import { Link } from 'react-router-dom';
 
 try {	
   const separarCon = (separador, ...strings)=> strings.reduce( (res,str)=> {
