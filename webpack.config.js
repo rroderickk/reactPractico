@@ -2,14 +2,13 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-
 /** @type {import('webpack').Configuration} */
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-    publicPath: "/",
+    filename: "reactPractico/bundle.js",
+    publicPath: "/reactPractico/",
   },
   mode: 'development',
   resolve: {
@@ -82,5 +81,3 @@ module.exports = {
     historyApiFallback: true,
   }
 }
-
-

@@ -16,9 +16,9 @@ import '@styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) =>
 const App =()=>  {	
 	const initialState = useInitialState();
 
-return	(
+return	( //!core/
 <AppContext.Provider value={initialState}>
-	<BrowserRouter>
+	<BrowserRouter basename="/reactPractico" >
 	<Layout>
 		<Routes>
 			<Route exact path="/"						element={<Home   	 			/>		} />
