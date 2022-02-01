@@ -22,6 +22,5 @@ jobs:
       - name: D3pl0y!!
         run: 
         uses: JamesIves/github-pages-deploy-action@4.1.6
-        with:
           branch: deploy 
           folder: dist 
