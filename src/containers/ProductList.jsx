@@ -5,7 +5,7 @@ import '@styles/ProductList.scss';                   /*@styles*/ //! (@) => @sty
 const ProductList =()=> { 
 
   const API = "https://api.escuelajs.co/api/v1/products";
-  	const products = useGetProducts(API);                              //!$1 <=@ ENDPOINT
+  	const products = useGetProducts(API);                        //!$1 <=@ ENDPOINT
       return (
         <section className="main-container-productlist">
         <div className="ProductList-productlist">

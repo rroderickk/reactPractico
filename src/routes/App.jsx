@@ -31,10 +31,10 @@ return	(
 			<Route exact path="/checkout" 				element={<Checkout 					/>				}	/>
 			<Route exact path="/createaccount" 		element={<CreateAccount 			/>				}	/>
 			<Route path="*"												element={<NotFound 							/>				} />
-			<Route exact path="/sumary"			element={<Sumary 												/>			}	/>
-	//todo┌─┐┌─┐┌┬┐┌─┐┌─┐┌┐┌┌─┐┌┐┌┌┬┐┌─┐
-	//todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐@ComponentsRoutes revisarStylesResponsive
-	//todo└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘
+			<Route exact path="/sumary"			element={<Sumary 												/>				}	/>
+	//todo┌─┐┌─┐┌┬┐┌─┐┌─┐┌┐┌┌─┐┌┐┌┌┬┐┌─┐																				 	/>		 		}/>
+	//todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐@ComponentsRoutes revisarStylesResponsive		/>		 		}/>
+	//todo└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘┘└┘└─┘┘└┘																	/>		 		}/>
 			<Route exact path="/shoppingcarditem"		 	element={<ShoppingCartItem 		/>			}	/>
 			<Route exact path="/productinfo" 				element={<ProductInfo 				/>			}	/>
 			<Route exact path="/productlist" 			element={<ProductList 				/>			}	/>

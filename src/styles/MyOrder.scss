@@ -12,7 +12,7 @@
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
 	overflow-y: auto;
-	height: 350px;
+	// height: 350px;
 }
 .title-container {
 	display: flex;
@@ -57,13 +57,13 @@
 	cursor: pointer;
 	font-size: var(--md);
 	font-weight: bold;
-	height: 50px;
+	height: 100%;
 }
 @media (max-width: 640px) {
 	.MyOrder {
 		width: 100%;
 		overflow-y: auto;
-		height: 350px;
+		height: 100%;
 	}
 }
 

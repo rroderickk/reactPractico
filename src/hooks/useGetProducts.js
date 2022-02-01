@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const useGetProducts = (API) => {
 try{	
 
-/*
+/* 
 // 	//? useEffect with axios more slowly//
 // console.time('[t] useGetEffectWithAxios <=@');
 // 	const [products, setProducts] = useState([]);
@@ -18,8 +18,7 @@ try{
 // 	console.timeEnd('[t] useGetEffectWithAxios <=@');
 // 	return products;
 
-
-//? async useEffect  //
+//   //? async useEffect//
 // const [products, setProducts] = useState([]);
 // useEffect(async () => {
 // 	const response = await axios(API);
@@ -27,6 +26,7 @@ try{
 // }, []);
 // return products;
 */
+
 
 
  //** useEffect */

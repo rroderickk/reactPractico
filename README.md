@@ -200,8 +200,7 @@ step-7 completed
 step-11 completed
 
 ### Completando el carrito de compras video22
-
 ### Orden de compra video23
-
 ### Calculando el precio total video24
+### Remover del carrito video25
 
