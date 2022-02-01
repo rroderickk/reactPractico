@@ -36,6 +36,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         options: { presets: ['@babel/env','@babel/preset-react'] },
+        extensions: ['.js', '.jsx' ],
       },
       {
         test: /\.(png|jpg|svg|jpeg|web|svg)$/,
