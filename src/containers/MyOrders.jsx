@@ -1,20 +1,15 @@
-import { useContext, useState} from 'react'; import AppContext     from "@context/AppContext"
-import OrderItem      from '@components/OrderItem';
-import arrow          from "@icons/flechita.svg"; import '@styles/MyOrder.scss'; /**@styles*/ //! (@) => @styles
+import { useContext } from 'react'; import AppContext from "@context/AppContext";
+import OrderItem from '@components/OrderItem';
+import arrow from "@icons/flechita.svg"; import '@styles/MyOrder.scss'; /**@styles*/ //! (@) => @styles
 
 const MyOrder =()=> { 
-  const [statePrice,setPrice] = useState('0');
 const { state } = useContext(AppContext);
-
-// const priceStateInit = state.cart.map( (product) => parseInt(product.price))
-// const handlePrice =  priceStateInit.reduce((current=0,productPrice) => current+productPrice);
 
 const sumaTotal = () => {
   const reducer = (accumulator, currentValue) => accumulator+currentValue.price;
   const sum = state.cart.reduce(reducer, 0);
   return sum;
 }
-
 
 return (
 <aside className  = "MyOrder">
@@ -23,8 +18,8 @@ return (
   <p className    = "title-myorders">My order</p>
 </div>
 <div className="my-order-content">
-  {state.cart.map(    product => (
-    <OrderItem product={product} key={ `orderItem-${product.id}` } />
+  {state.cart.map( (product, index) => (
+    <OrderItem product={product} key={index} index={index}  />
   ))}
   <div className="order-myorders">
     <p> <span>Total</span> </p> 

@@ -3,11 +3,11 @@ import AppContext from '@context/AppContext';
 import '@styles/ProductItem.scss';                      /*@styles*/ //! (@) => @styles
 import addToCardImage from "@icons/bt_add_to_cart.svg";
 
-const ProductItem = ({ product }) => {
-	const { addToCart } = useContext(AppContext);
+const ProductItem = ({ product }) => { const { addToCart } = useContext(AppContext);
+
+/* util */
 const handleClick = (item) => {
 	addToCart(item);
-
 };
 
 return (
