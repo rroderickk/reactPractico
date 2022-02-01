@@ -16,8 +16,8 @@ jobs:
 
       - name: Install and build
         run: 
-          npm run install
-          npm run build
+          npm install
+          npm build
 
       - name: D3pl0y!!
         run: |
