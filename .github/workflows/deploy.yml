@@ -20,6 +20,8 @@ jobs:
           npm build
 
       - name: D3pl0y!!
-        run: |
-          branch: deploy
-          folder: dist
+        run: 
+        uses: JamesIves/github-pages-deploy-action@4.1.6
+        with:
+          branch: deploy 
+          folder: dist 
