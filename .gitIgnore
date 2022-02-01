@@ -12,7 +12,7 @@ node_modules/
 theme/
 
 #$
-public/moneyIn/
+# public/moneyIn/
 
 #CssTrucos 
 trucosCss/
