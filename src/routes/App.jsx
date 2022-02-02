@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
-import ForgotPassword from '@pages/ForgotPassword'; 
-import Login from '@pages/Login'; import NotFound from '@pages/NotFound'; import Home from '@pages/Home'; import SendEmail from '@pages/SendEmail'; import Sumary from '@pages/Sumary';
-import MyAccount from '@pages/MyAccount'; import Checkout from '@pages/CheckOut'; import Orders from '@pages/Orders';
-import CreateAccount from '@pages/CreateAccount'; import Karts from '@components/Karts';
-import ShoppingCartItem from '@components/ShoppingCartItem'; import Menu from '@components/Menu';
-import ProductInfo from '@components/ProductInfo'; import ProductItem from '@components/ProductItem';
-import MyOrders from '@containers/MyOrders'; import ProductDetail from '@containers/ProductDetail';
-import OrderItem from '@components/OrderItem';
-import ProductList from '@containers/ProductList';
-import AppContext from '@context/AppContext';
-import useInitialState from "@hooks/useInitialState";
-import '@styles/global.css'; /*@styles&%&/$!#$%$&/$%52245074$styles*/ //! (@) => @styles
+import ForgotPassword from '../pages/ForgotPassword'; 
+import Login from '../pages/Login'; import NotFound from '../pages/NotFound'; import Home from '../pages/Home'; import SendEmail from '../pages/SendEmail'; import Sumary from '../pages/Sumary';
+import MyAccount from '../pages/MyAccount'; import Checkout from '../pages/CheckOut'; import Orders from '../pages/Orders';
+import CreateAccount from '../pages/CreateAccount'; import Karts from '../components/Karts';
+import ShoppingCartItem from '../components/ShoppingCartItem'; import Menu from '../components/Menu';
+import ProductInfo from '../components/ProductInfo'; import ProductItem from '../components/ProductItem';
+import MyOrders from '../containers/MyOrders'; import ProductDetail from '../containers/ProductDetail';
+import OrderItem from '../components/OrderItem';
+import ProductList from '../containers/ProductList';
+import AppContext from '../context/AppContext';
+import useInitialState from "../hooks/useInitialState";
+import '../styles/global.css'; /*../styles&%&/$!#$%$&/$%52245074$styles*/ //! (../) => ../styles
 
 const App =()=>  {	
 	const initialState = useInitialState();
@@ -33,7 +33,7 @@ return	( //!core/
 			<Route path="*"												element={<NotFound 							/>				} />
 			<Route exact path="/sumary"			element={<Sumary 												/>				}	/>
 	//todo┌─┐┌─┐┌┬┐┌─┐┌─┐┌┐┌┌─┐┌┐┌┌┬┐┌─┐																				 	/>		 		}/>
-	//todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐@ComponentsRoutes revisarStylesResponsive		/>		 		}/>
+	//todo│  │ ││││├─┘│ ││││├┤ │││ │ └─┐../ComponentsRoutes revisarStylesResponsive		/>		 		}/>
 	//todo└─┘└─┘┴ ┴┴  └─┘┘└┘└─┘┘└┘ ┴ └─┘┘└┘└─┘┘└┘																	/>		 		}/>
 			<Route exact path="/shoppingcarditem"		 	element={<ShoppingCartItem 		/>			}	/>
 			<Route exact path="/productinfo" 				element={<ProductInfo 				/>			}	/>
