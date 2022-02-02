@@ -1,4 +1,4 @@
-import OrderItem from ',,/components/OrderItem';
+import OrderItem from '../components/OrderItem';
 import '../styles/Orders.scss';                /*@styles*/ //! (@) => @styles
 
 try{	
