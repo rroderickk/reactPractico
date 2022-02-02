@@ -7,14 +7,14 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "/bundle.js",
+    filename: "reactPractico/bundle.js",
     publicPath: "/",
   },
   mode: 'development',
   resolve: {
     extensions: [".js", ".jsx"],
 		alias: {
-			'@components': path.resolve(__dirname, 'src/components/'),
+			// '@components': path.resolve(__dirname, 'src/components/'),
 			'@containers': path.resolve(__dirname, 'src/containers/'),
 			'@hooks': path.resolve(__dirname, 'src/hooks/'),
 			'@pages': path.resolve(__dirname, 'src/pages/'),
