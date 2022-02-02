@@ -1,6 +1,6 @@
-import tesla2 from '@moneyIn/tesla_roadster.jpg';
-import addtocard from "@icons/bt_add_to_cart.svg";
-import '@styles/ProductInfo.scss';                          /*@styles*/ //! (@) => @
+import tesla2 from '../../public/moneyIn/tesla_roadster.jpg';
+import addtocard from "../../public/icons/bt_add_to_cart.svg";
+import '../styles/ProductInfo.scss';                          /*../styles*/ //! (../) => ../
 
 const ProductInfo = () => { return (
 <div className="ProductInfo">

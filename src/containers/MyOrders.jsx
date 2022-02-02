@@ -1,6 +1,6 @@
-import { useContext } from 'react'; import AppContext from "@context/AppContext";
-import OrderItem from '@components/OrderItem';
-import arrow from "@icons/flechita.svg"; import '@styles/MyOrder.scss'; /**@styles*/ //! (@) => @styles
+import { useContext } from 'react'; import AppContext from "../context/AppContext";
+import OrderItem from '../components/OrderItem';
+import arrow from "../../public/icons/flechita.svg"; import '../styles/MyOrder.scss'; /**../styles*/ //! (../) => ../styles
 
 const MyOrder =()=> { 
 const { state } = useContext(AppContext);

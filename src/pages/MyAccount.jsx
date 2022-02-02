@@ -1,5 +1,5 @@
-import logoaccount from '@logos/logo_yard_sale.svg';
-import '@styles/MyAccount.scss'; /*@styles*/ //! (@) => @styles
+import logoaccount from '../../public/logos/logo_yard_sale.svg';
+import '../styles/MyAccount.scss'; /*@styles*/ //! (@) => @styles
 
 const MyAccount = () => { return (
 <>

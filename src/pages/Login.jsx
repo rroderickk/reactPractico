@@ -1,6 +1,6 @@
 import { useRef } from 'react'; import { Link } from 'react-router-dom';
-import '@styles/login.scss';                               /*@styles*/ //! (@) => @styles
-import logoyard from '@logos/logo_yard_sale.svg';
+import '../styles/login.scss';                               /*../styles*/ //! (../) => ../styles
+import logoyard from '../../public/logos/logo_yard_sale.svg';
 import ForgotPassword from './ForgotPassword';
 
 try {	
@@ -54,7 +54,7 @@ const Login = () => {
     <img src={logoyard} alt="logo" className="logo-login" />
     <form action="/" className="form" ref={form}>
       <label htmlFor="email" className="label">Email address</label>
-      <input type="text" name="email" placeholder="email@email.com" className="input input-email"/>
+      <input type="text" name="email" placeholder="email../email.com" className="input input-email"/>
       <label htmlFor="password" className="label">Password</label>
       <input type="password" name="password" placeholder="enter password here" className="input input-password"/>
       <Link to="/forgotpassword" element={<ForgotPassword />}>Forgot my password</Link>

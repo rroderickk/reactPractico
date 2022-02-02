@@ -1,4 +1,4 @@
-import '@styles/notFound.scss'; /*@styles&%&/$!#$%$&/$%5245869$styles*/ //! (@) => @styles
+import '../styles/notFound.scss'; /*@styles&%&/$!#$%$&/$%5245869$styles*/ //! (@) => @styles
 
 const NotFound = () => {
 return (

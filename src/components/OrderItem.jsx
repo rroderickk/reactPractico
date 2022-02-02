@@ -1,6 +1,6 @@
-import { useContext } from 'react'; import AppContext from "@context/AppContext";
-import '@styles/OrderItem.scss';                  /**@styles*/ //! (@) => @styles
-import xIconSlice from '@icons/icon_close.png';
+import { useContext } from 'react'; import AppContext from "../context/AppContext";
+import '../styles/OrderItem.scss';                  /**../styles*/ //! (../) => ../styles
+import xIconSlice from '../../public/icons/icon_close.png';
 
 const OrderItem = ({product, index}) => { const {removeFromCart} = useContext(AppContext);
 
