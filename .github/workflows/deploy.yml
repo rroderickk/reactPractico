@@ -20,6 +20,7 @@ jobs:
           npm install eslint-import-resolver-webpack
           npm install react-navigation
           npm audit fix
+          npm fund
           npm install
           npm run build
           # npm start
