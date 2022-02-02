@@ -16,8 +16,9 @@ jobs:
 
       - name: Install and build
         run: 
-          npm run install
-          npm run build
+          npm install —save-dev gh-pages
+          npm install
+          npm build
 
       - name: D3pl0y!!
         run: |
