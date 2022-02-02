@@ -18,7 +18,7 @@ const App =()=>  {
 
 return	( //!core/
 <AppContext.Provider value={initialState}>
-	<BrowserRouter basename="/reactPractico" >
+	<BrowserRouter >
 	<Layout>
 		<Routes>
 			<Route exact path="/"						element={<Home   	 			/>		} />
