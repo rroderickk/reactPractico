@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ForgotPassword from '@pages/ForgotPassword'; import SendEmail from '@pages/SendEmail';
-import Home from '@pages/Home'; import Login from '@pages/Login'; import NotFound from '@pages/NotFound'; import MyAccount from '@pages/MyAccount'; import Checkout from '@pages/CheckOut'; import Orders from '@pages/Orders';
-import ShoppingCardItem from '@components/ShoppingCartItem'; import ProductInfo from '@components/ProductInfo'; import Menu from '@components/Menu'; import Header from '@components/Header'; import ProductItem from '@components/ProductItem';
-import ProductDetail from '@containers/ProductDetail'; import MyOrders from '@containers/MyOrders';
-import ProductList from '@containers/ProductList'; 
-import CreateAccount from '@pages/CreateAccount';
-import OrderItem from '@components/OrderItem';
-import '@styles/global.css';             							/*@styles*/ //! (@) => @styles
+import ForgotPassword from '../pages/ForgotPassword'; import SendEmail from '../pages/SendEmail';
+import Home from '../pages/Home'; import Login from '../pages/Login'; import NotFound from '../pages/NotFound'; import MyAccount from '../pages/MyAccount'; import Checkout from '../pages/CheckOut'; import Orders from '../pages/Orders';
+import ShoppingCardItem from '../components/ShoppingCartItem'; import ProductInfo from '../components/ProductInfo'; import Menu from '../components/Menu'; import Header from '../components/Header'; import ProductItem from '../components/ProductItem';
+import ProductDetail from '../containers/ProductDetail'; import MyOrders from '../containers/MyOrders';
+import ProductList from '../containers/ProductList'; 
+import CreateAccount from '../pages/CreateAccount';
+import OrderItem from '../components/OrderItem';
+import '../styles/global.css';             							/*../styles*/ //! (../) => ../styles
 var styles = { margin: 44+'px', 'lineHeight': 28+'px', };
 //?╦═╗╔═╗┬ ┬┌┬┐┌─┐┬─┐╔═╗┬─┐┌─┐┌┐┌┌┬┐╔╗╔┌┬┐
 //?╠╦╝║ ║│ │ │ ├┤ ├┬┘╠╣ ├┬┘│ ││││ │ ║║║ ││

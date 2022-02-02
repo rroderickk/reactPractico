@@ -1,8 +1,8 @@
 import { useState,useContext } from 'react';
-import AppContext from "@context/AppContext"; import iconmenu from '@icons/icon_menu.svg'; import shopping from '@icons/icon_shopping_cart.svg'; import menuImg from '@logos/logo_yard_sale.svg';
-import Menu from '@components/Menu';
-import MyOrders from '@containers/MyOrders';
-import '@styles/header.scss';                 /*@styles*/ //! (@) => @styles
+import AppContext from "../context/AppContext"; import iconmenu from '../../public/icons/icon_menu.svg'; import shopping from '../icons/icon_shopping_cart.svg'; import menuImg from '../logos/logo_yard_sale.svg';
+import Menu from '../components/Menu';
+import MyOrders from '../containers/MyOrders';
+import '../styles/header.scss';                 /*../styles*/ //! (../) => ../styles
 
 const Header =()=> {
 
@@ -29,7 +29,7 @@ return ( <nav>
   <ul>
     <li 
       className="navbar-email"
-      onClick={handleToggle}>example@example.com
+      onClick={handleToggle}>example../example.com
     </li>
     <li 
       onClick = { ()=> setToggleOrders(!toggleOrders)  }
