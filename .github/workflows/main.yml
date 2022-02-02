@@ -21,7 +21,7 @@ jobs:
           npm build
           npm deploy
 
-      # - name: D3pl0y!!
-      #   run: |
-      #     branch: deploy 
-      #     folder: dist
+      - name: D3pl0y!!
+        run: |
+          branch: deploy 
+          folder: dist
