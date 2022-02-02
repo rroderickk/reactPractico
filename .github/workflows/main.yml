@@ -14,7 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install and build
+      - shell: bash
+        run: |
+          git config user.name "name"
+          git config user.email "<>"
+          git config push.default "current"
+          ./run
+        - name: Install and build
         run: 
           npm install gh-pages
           npm install
