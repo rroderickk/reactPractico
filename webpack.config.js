@@ -13,8 +13,8 @@ module.exports = {
   mode: 'development',
   resolve: {
     extensions: [".js", ".jsx"],
-		// alias: {
-		// 	// '@components': path.resolve(__dirname, 'src/components/'),
+		alias: {
+		'@components': path.resolve(__dirname, 'src/components/'),
 		// 	'@containers': path.resolve(__dirname, 'src/containers/'),
 		// 	'@hooks': path.resolve(__dirname, 'src/hooks/'),
 		// 	'@pages': path.resolve(__dirname, 'src/pages/'),
