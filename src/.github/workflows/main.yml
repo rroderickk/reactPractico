@@ -1,31 +1,18 @@
-name: CI
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
-
+name: Build and Deploy
+on: [push]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
 
-      - name: Install rsync 📚
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
-          apt-get update && apt-get install -y rsync
-
-      - name: Install and build
-        run: 
           npm install
           npm run build
-          npm deploy
-
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
