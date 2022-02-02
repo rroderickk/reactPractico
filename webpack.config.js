@@ -27,7 +27,7 @@ module.exports = {
 		// 	'@icons': path.resolve(__dirname, 'public/icons/'),
 		// 	'@img': path.resolve(__dirname, 'public/img/'),
 		// 	'@logos': path.resolve(__dirname, 'public/logos/'),
-		// },
+		},
   },
   module: {
     rules: [
