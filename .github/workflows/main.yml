@@ -16,7 +16,7 @@ jobs:
 
       - name: Install and build
         run: 
-          npm install —save-dev gh-pages
+          npm install gh-pages
           npm install
           npm build
 
