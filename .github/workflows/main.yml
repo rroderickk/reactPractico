@@ -12,14 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
 
+      - name: bash
       - shell: bash
         run: |
           git config user.name "name"
           git config user.email "<>"
           git config push.default "current"
           ./run
+
+      - uses: actions/checkout@v2
         - name: Install and build
         run: 
           npm install gh-pages
