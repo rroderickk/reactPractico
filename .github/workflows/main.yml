@@ -20,7 +20,7 @@ jobs:
           npm install
           npm build
 
-      - name: D3pl0y!!
-        run: |
+      # - name: D3pl0y!!
+        # run: |
           # branch: NewDeploy 
-          folder: dist
+          # folder: dist
