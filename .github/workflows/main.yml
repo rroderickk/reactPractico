@@ -18,11 +18,10 @@ jobs:
         run: 
           npm install gh-pages
           npm install
-          npm predeploy
-          npm deploy
           npm build
+          npm deploy
 
-      - name: D3pl0y!!
-        run: |
-          branch: deploy 
-          folder: dist
+      # - name: D3pl0y!!
+      #   run: |
+      #     branch: deploy 
+      #     folder: dist
