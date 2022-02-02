@@ -16,9 +16,9 @@ jobs:
         run: |
           # npm install react-navigation
           # npm install eslint-import-resolver-webpack --save-dev
-          npm install
-          npm build
-          npm start
+          npm run install
+          npm run build
+          npm run start
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
