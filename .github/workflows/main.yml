@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ main ]
+    branches: [ Newdeploy ]
   pull_request:
-    branches: [ main ]
+    branches: [ Newdeploy ]
 
   workflow_dispatch:
 
@@ -12,23 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
 
-      - name: bash
-      - shell: bash
-        run: |
-          git config user.name "name"
-          git config user.email "<>"
-          git config push.default "current"
-
-      - uses: actions/checkout@v2
-        - name: Install and build
+    - name: Install and build
         run: 
           npm install gh-pages
           npm install
           npm build
           npm deploy
 
-      - name: D3pl0y!!
-        run: |
-          branch: deploy 
-          folder: dist
+      # - name: D3pl0y!!
+      #   run: |
+      #     branch: Newdeploy 
+      #     folder: dist
