@@ -18,7 +18,6 @@ jobs:
         run: 
           npm install gh-pages
           npm install
-          npm predeploy 
           npm build
           npm deploy
 
@@ -26,4 +25,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
           branch: NewDeploy # The branch the action should deploy to.
-          folder: src # The folder the action should deploy.
+          folder: dist/src # The folder the action should deploy.
