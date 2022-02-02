@@ -22,5 +22,5 @@ jobs:
 
       - name: D3pl0y!!
         run: |
-          branch: NewDeploy 
+          branch: gh-pages 
           folder: dist
