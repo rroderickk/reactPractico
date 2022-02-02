@@ -11,14 +11,14 @@ jobs:
       # - name: Install rsync 📚
         # run: |
           # npm install rsync
+          # npm build
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           # npm install react-navigation
           # npm install eslint-import-resolver-webpack --save-dev
-          npm run install
-          npm run build
-          npm run start
+          npm install
+          npm start
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
