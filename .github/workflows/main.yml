@@ -20,6 +20,9 @@ jobs:
           npm install
           npm build
           npm deploy
+      - name: Install rsync 📚
+        run: |
+          apt-get update && apt-get install -y rsync
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
