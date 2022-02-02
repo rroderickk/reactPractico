@@ -3,7 +3,7 @@ import Layout from '@containers/Layout';
 import ForgotPassword from '@pages/ForgotPassword'; 
 import Login from '@pages/Login'; import NotFound from '@pages/NotFound'; import Home from '@pages/Home'; import SendEmail from '@pages/SendEmail'; import Sumary from '@pages/Sumary';
 import MyAccount from '@pages/MyAccount'; import Checkout from '@pages/CheckOut'; import Orders from '@pages/Orders';
-import CreateAccount from '@pages/CreateAccount'; import Karts from '@components/Karts';
+import CreateAccount from '@pages/CreateAccount'; /* import Karts from '@components/Karts'; */
 import ShoppingCartItem from '@components/ShoppingCartItem'; import Menu from '@components/Menu';
 import ProductInfo from '@components/ProductInfo'; import ProductItem from '@components/ProductItem';
 import MyOrders from '@containers/MyOrders'; import ProductDetail from '@containers/ProductDetail';
@@ -22,7 +22,7 @@ return	(
 	<Layout>
 		<Routes>
 			<Route exact path="/"						element={<Home   	 			/>		} />
-			<Route exact path="/karts"						element={<Karts			/>		} />
+			{/* <Route exact path="/karts"						element={<Karts			/>		} /> */}
 			<Route exact path="/login"						element={<Login 			/>		} />
 			<Route exact path="/forgotpassword" 	element={<ForgotPassword />		} />
 			<Route exact path="/sendemail"				element={<SendEmail 	/>				} />
