@@ -17,17 +17,15 @@ module.exports = {
 		alias: {
 			'@components': path.resolve(__dirname, 'src/components/'),
 			'@containers': path.resolve(__dirname, 'src/containers/'),
-			'@hooks': path.resolve(__dirname, 'src/hooks/'),
-			'@pages': path.resolve(__dirname, 'src/pages/'),
-			'@routes': path.resolve(__dirname, 'src/routes/'),
-			'@context': path.resolve(__dirname, 'src/context/'),
-			'@moneyIn': path.resolve(__dirname, 'public/moneyIn/'),
-
-			'@styles': path.resolve(__dirname, 'src/styles/'), 
-
-			'@icons': path.resolve(__dirname, 'public/icons/'),
-			'@img': path.resolve(__dirname, 'public/img/'),
-			'@logos': path.resolve(__dirname, 'public/logos/'),
+            '@hooks': path.resolve(__dirname, 'src/hooks/'),
+            '@pages': path.resolve(__dirname, 'src/pages/'),
+            '@routes': path.resolve(__dirname, 'src/routes/'),
+            '@context': path.resolve(__dirname, 'src/context/'),
+            '@moneyIn': path.resolve(__dirname, 'public/moneyIn/'),
+            '@styles': path.resolve(__dirname, 'src/styles/'), 
+            '@icons': path.resolve(__dirname, 'public/icons/'),
+            '@img': path.resolve(__dirname, 'public/img/'),
+        '@logos': path.resolve(__dirname, 'public/logos/'),
 		},
   },
   module: {
