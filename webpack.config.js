@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "reactPractico/bundle.js",
+    filename: "/reactPractico/bundle.js",
     publicPath: "/",
   },
   mode: 'development',
