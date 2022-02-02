@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "bundle"),
+    path: path.resolve(__dirname, ""),
     filename: "reactPractico/bundle.js",
     publicPath: "/",
   },
