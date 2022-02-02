@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from '@containers/Layout';
+import Layout from '../containers/Layout';
 import ForgotPassword from '@pages/ForgotPassword'; 
 import Login from '@pages/Login'; import NotFound from '@pages/NotFound'; import Home from '@pages/Home'; import SendEmail from '@pages/SendEmail'; import Sumary from '@pages/Sumary';
 import MyAccount from '@pages/MyAccount'; import Checkout from '@pages/CheckOut'; import Orders from '@pages/Orders';
