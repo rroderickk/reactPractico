@@ -33,4 +33,4 @@ jobs:
       - name: clean 🚀
         clean: true
         clean-exclude: |
-                README.md
+          README.md
