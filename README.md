@@ -1,4 +1,8 @@
 # React Practico con Oscar Barajas Taveras
+
+## deploy
+[deploy](https://rroderickk.github.io/reactPractico)
+
 ### Class Notes video3
 package.json
 ```
