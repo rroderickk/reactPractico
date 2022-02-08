@@ -1,3 +1,4 @@
+import React from 'react';
 import logohouse from '@logos/logo_yard_sale.svg';
 import '@styles/CreateAccount.scss';          /*@styles*/ //! (@) => @styles
 

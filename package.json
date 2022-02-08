@@ -1,19 +1,19 @@
 {
-  "homepage": "https://rroderickk.github.io/reactPractico",
   "name": "reactpractico",
   "version": "1.1.0",
   "description": "react eshop",
+  "homepage": "https://rroderickk.github.io/reactPractico",
   "main": ".src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b master -d dist",
     "start": "webpack serve",
     "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rroderickk/reactPractico.git"
+    "url": "https://github.com/rroderickk/reactPractico"
   },
   "keywords": [
     "react",

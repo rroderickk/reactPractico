@@ -1,3 +1,4 @@
+import React from 'react';
 import '@styles/ForgotPassword.scss';
 // import logoyard from '@logos/logo_yard_sale.svg';
 

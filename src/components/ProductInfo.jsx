@@ -1,3 +1,4 @@
+import React from 'react';
 // import tesla2 from '@moneyIn/tesla_roadster.jpg';
 import addtocard from "@icons/bt_add_to_cart.svg";
 import '@styles/ProductInfo.scss';                          /*@styles*/ //! (@) => @

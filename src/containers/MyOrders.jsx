@@ -1,3 +1,4 @@
+import React from 'react';
 import { useContext } from 'react'; import AppContext from "@context/AppContext";
 import OrderItem from '@components/OrderItem';
 import arrow from "@icons/flechita.svg"; import '@styles/MyOrder.scss'; /**@styles*/ //! (@) => @styles

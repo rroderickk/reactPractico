@@ -1,3 +1,4 @@
+import React from 'react';
 import { useContext } from 'react'; import AppContext from "@context/AppContext";
 import '@styles/OrderItem.scss';                  /**@styles*/ //! (@) => @styles
 import xIconSlice from '@icons/icon_close.png';

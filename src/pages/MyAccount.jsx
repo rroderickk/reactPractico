@@ -1,3 +1,4 @@
+import React from 'react';
 import logoaccount from '@logos/logo_yard_sale.svg';
 import '@styles/MyAccount.scss'; /*@styles*/ //! (@) => @styles
 

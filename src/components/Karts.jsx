@@ -1,3 +1,4 @@
+import React from 'react';
 import '@styles/karts.scss';                      /*@styles*/ //! (@) => @styles
 import tesla1 from '@moneyIn/a6a5e1b74874278c0e1297c551bcfc.png';
 import bici from '@moneyIn/pexels-photo-276517.jpeg';

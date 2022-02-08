@@ -8,8 +8,8 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "reactPractico/bundle.js",
-    publicPath: "/",
+    filename: "bundle.js",
+    publicPath: "./",
   },
   mode: 'development',
   resolve: {
@@ -80,4 +80,3 @@ module.exports = {
     historyApiFallback: true,
   }
 }
-

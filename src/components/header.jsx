@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState,useContext } from 'react';
 import AppContext from "@context/AppContext"; import iconmenu from '@icons/icon_menu.svg'; import shopping from '@icons/icon_shopping_cart.svg'; import menuImg from '@logos/logo_yard_sale.svg';
 import Menu from '@components/Menu';
