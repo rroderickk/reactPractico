@@ -1,7 +1,8 @@
 # React Practico con Oscar Barajas Taveras
 
 ## deploy
-[deploy](https://rroderickk.github.io/reactPractico)
+
+[![Deploy](https://vercel.com/button)](https://rroderickk.github.io/reactPractico)
 
 ### Class Notes video3
 package.json
